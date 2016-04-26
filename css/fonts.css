@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Droid Serif';
+  src: url('../fonts/DroidSerif-Bold.ttf');
+  src: url('../fonts/DroidSerif.ttf');
+  src: url('../fonts/DroidSerif-Italic.ttf');
+  src: url('../fonts/DroidSerif-BoldItalic.ttf');
+}
+@font-face {
+  font-family: 'Hero';
+  src: url('../fonts/Hero Light.otf');
+  src: url('../fonts/Hero.otf');
+}
