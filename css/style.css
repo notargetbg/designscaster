@@ -1,7 +1,135 @@
+/* ------------------ HOME PAGE -------------------- */
 .jumbotron {
 	background-color: #3490DE;
 	color: white;
 }
-.ls-slide h1 {
-	color: white !important;
+
+	/* --------------- MEDIA STYLES ------------------ */
+	.media-home .media-heading {
+		margin-top: 20px;
+	}
+
+/* -------- HOVER EFFECTS - sections home page --------- */
+.view {
+    width: 120px;
+    height: 120px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-shadow: 1px 1px 2px #e6e6e6;
+    cursor: default;
+}
+
+.view .mask, .view .mask-content {
+    width: 240px;
+    height: 240px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+.view img {
+    display: block;
+    position: relative;
+}
+
+.view a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000;
+}
+
+.view a.info:hover {
+    box-shadow: 0 0 5px #000;
+}
+
+.view-1 .mask-1,
+.view-1 .mask-2 {
+	background-color: rgba(0,0,0,0.5);
+    height: 240px;
+    width: 240px;
+	background: rgba(102, 57, 166, 0.5);
+	opacity: 1;
+    transition: all 0.3s ease-in-out 0.6s;
+}
+
+.view-2 .mask-1,
+.view-2 .mask-2 {
+	background-color: rgba(0,0,0,0.5);
+    height: 240px;
+    width: 240px;
+	background: rgba(111,231,221,0.5);
+	opacity: 1;
+    transition: all 0.3s ease-in-out 0.6s;
+}
+
+.view-3 .mask-1,
+.view-3 .mask-2 {
+	background-color: rgba(0,0,0,0.5);
+    height: 240px;
+    width: 240px;
+	background: rgba(52,144,222,0.5);
+	opacity: 1;
+    transition: all 0.3s ease-in-out 0.6s;
+}
+
+.view-4 .mask-1,
+.view-4 .mask-2 {
+	background-color: rgba(0,0,0,0.5);
+    height: 240px;
+    width: 240px;
+	background: rgba(235,38,50,0.5);
+	opacity: 1;
+    transition: all 0.3s ease-in-out 0.6s;
+}
+
+.view .mask-1 { 
+    left: auto;
+    right: 0px;
+    transform: rotate(45deg) translateX(-180px);
+    transform-origin: 100% 0%;
+}
+
+.view .mask-2 { 
+    top: auto;
+    bottom: 0px;
+    transform: rotate(45deg) translateX(180px);
+    transform-origin: 0% 100%;
+}
+
+.view .mask-content {
+    background: rgba(0,0,0,0.9);
+    height: 0px;
+    opacity: 0.5;
+    width: 120px;
+    overflow: hidden;
+    transform: rotate(-33.5deg) translate(-112px,166px);
+    transform-origin: 0% 100%;
+    transition: all 0.4s ease-in-out 0.3s;
+}
+
+.view:hover .mask-content{
+    height: 36px;
+    width: 120px;
+    opacity: 0.9;
+    top: 40px;
+    transform: rotate(0deg) translate(0px,0px);
+}
+
+.view:hover .mask-1,
+.view:hover .mask-2 {
+	transition-delay: 0s;
+}
+
+.view:hover .mask-1 {
+    transform: rotate(45deg) translateX(1px);
+}
+
+.view:hover .mask-2 {  
+    transform: rotate(45deg) translateX(-1px);
 }
