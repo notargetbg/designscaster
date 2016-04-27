@@ -1,16 +1,19 @@
+/* ------------------ HOME PAGE -------------------- */
 .jumbotron {
 	background-color: #3490DE;
 	color: white;
 }
 
+	/* --------------- MEDIA STYLES ------------------ */
+	.media-home .media-heading {
+		margin-top: 20px;
+	}
 
 /* -------- HOVER EFFECTS - sections home page --------- */
 .view {
     width: 120px;
     height: 120px;
-    margin: 10px;
     float: left;
-    border: 2px solid #fff;
     overflow: hidden;
     position: relative;
     text-align: center;
