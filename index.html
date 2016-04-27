@@ -31,6 +31,10 @@
 <body>
     <div class="menu-wrap">
             <nav class="menu">
+                <div>
+                    <img src="img/designscaster-logo-sm.png" class="img-responsive" alt="">
+                </div>
+                
                 <div class="icon-list">
                     <a href="#"><i class="fa fa-fw fa-star-o"></i><span>Favorites</span></a>
                     <a href="#"><i class="fa fa-fw fa-bell-o"></i><span>Alerts</span></a>
@@ -38,7 +42,10 @@
                     <a href="#"><i class="fa fa-fw fa-comment-o"></i><span>Comments</span></a>
                     <a href="#"><i class="fa fa-fw fa-bar-chart-o"></i><span>Analytics</span></a>
                     <a href="#"><i class="fa fa-fw fa-newspaper-o"></i><span>Reading List</span></a>
+                    <p style="color: #fff">We are a small motivated team and create beautiful websites mainly using the WordPress platform.</p>
                 </div>
+
+                        
             </nav>
             <button class="close-button" id="close-button">Close Menu</button>
         </div>
@@ -51,31 +58,35 @@
                         <!-- The contents on your slider will be here -->
 
                         <!-- Slide -->
-                        <div class="ls-slide" data-ls="slidedelay: 2000; transition2d: all;">
+                        <div class="ls-slide" data-ls="slidedelay: 3000; transition2d: all;">
                          
                             <!-- A regular slide background -->
                             <img src="img/slider-1.jpg" class="ls-bg" alt="Slide background"/>
-                         
-                            <!-- YouTube/Vimeo video -->
-                            <h3 class="ls-l">I'm a text layer!</h3>
+                             
+                             <!-- image layer -->
+                            <img style="top: 35%; left: 50%; font-size: 48px;" src="img/designscaster-logo.png" class="ls-l" alt="Image layer">
+
+                            <h1 style="top: 52%; left: 50%; font-size: 48px;"  data-ls="offsetxin:500;durationin:3000;rotateyin:60;transformoriginin:right 50% 0;offsetxout:-50;durationout:3000;showuntil:400;rotateyout:-60;transformoriginout:left 50% 0;delayin:300;parallaxlevel: -5;" class="ls-l">I'm a text layer!</h1>
                         </div>
 
                         <!-- Slide -->
-                        <div class="ls-slide" data-ls="slidedelay: 2000; transition2d: all;">
+                        <div class="ls-slide" data-ls="slidedelay: 3000; transition2d: all;">
                          
                             <!-- A regular slide background -->
                              <img src="img/slider-2.jpg" class="ls-bg" alt="Slide background"/>
                          
                             <!-- YouTube/Vimeo video -->
-                            <h3 class="ls-l">I'm a text layer!</h3>
+                            <h1 style="top: 50%; left: 50%; font-size: 48px;"  data-ls="offsetxin:0;durationin:1500;delayin:3700;rotateyin:90;skewxin:60;transformoriginin:25% 50% 0;offsetxout:100;durationout:750;skewxout:60;" class="ls-l">Cool things happen!</h1>
                         </div>
 
                     </div>
 
                     <div class="jumbotron">
                       <div class="container">
-                          <h1>Hello, world!</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore impedit explicabo maiores provident obcaecati temporibus debitis ratione, amet! Impedit atque placeat deserunt recusandae magnam tenetur cumque laborum consequuntur, dolorum necessitatibus.</p>
+                          <h1><span class="glyphicon glyphicon-console"></span> Hello, world!</h1>
+                        <p>
+                            We are a young team of professionalists who have passion for innovation and quality. We have experience in the area of design and webdesign as well as branding, optimisation and social media marketing. Motivated to provide you with the best possible product for your business we adress every project individually. We will give you suggestions and you can choose which suits you the best.
+                        </p>
   <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
                       </div>
                     </div>
@@ -180,8 +191,8 @@
                 // Slider options goes here,
                 // please check the 'List of slider options' section in the documentation
                 skin: 'noskin',
-                pauseOnHover: false,
-                // skinsPath: 'skins/',
+                pauseOnHover: true,
+                skinsPath: 'skins/',
                 responsiveUnder : 960,
                 // layersContainer : 960
             });

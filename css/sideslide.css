@@ -139,7 +139,7 @@ body,
 	transform: translate3d(0,100%,0);
 }
 
-.icon-list a {
+.icon-list a,.icon-list p {
 	display: block;
 	padding: 0.8em;
 	-webkit-transform: translate3d(0,500px,0);
@@ -147,7 +147,8 @@ body,
 }
 
 .icon-list,
-.icon-list a {
+.icon-list a,
+.icon-list p {
 	-webkit-transition: -webkit-transform 0s 0.4s;
 	transition: transform 0s 0.4s;
 	-webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
@@ -178,6 +179,10 @@ body,
 	-webkit-transform: translate3d(0,3000px,0);
 	transform: translate3d(0,3000px,0);
 }
+.icon-list p {
+	-webkit-transform: translate3d(0,3500px,0);
+	transform: translate3d(0,3500px,0);
+}
 
 .icon-list a span {
 	margin-left: 10px;
@@ -195,7 +200,8 @@ body,
 }
 
 .show-menu .icon-list,
-.show-menu .icon-list a {
+.show-menu .icon-list a,
+.show-menu .icon-list p {
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 	-webkit-transition: -webkit-transform 0.8s;
@@ -204,7 +210,7 @@ body,
 	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
 }
 
-.show-menu .icon-list a {
+.show-menu .icon-list a, .show-menu .icon-list p {
 	-webkit-transition-duration: 0.9s;
 	transition-duration: 0.9s;
 }
