@@ -8,16 +8,15 @@ body,
 }
 
 .main-wrapper {
-	background: #D0D9FF;
 }
 
 .menu-wrap a {
-	color: #b8b7ad;
+	color: #fff;
 }
 
 .menu-wrap a:hover,
 .menu-wrap a:focus {
-	color: #c94e50;
+	color: #6FE7DD;
 }
 
 .content-wrap {
@@ -27,7 +26,7 @@ body,
 
 .content {
 	position: relative;
-	background: #b4bad2;
+	    height: 100%;
 }
 
 .content::before {
@@ -69,7 +68,7 @@ body,
 	right: 0.5em;
 	bottom: 0.5em;
 	left: 0.5em;
-	background: linear-gradient(#373a47 20%, transparent 20%, transparent 40%, #373a47 40%, #373a47 60%, transparent 60%, transparent 80%, #373a47 80%);
+	background: linear-gradient(#6FE7DD 20%, transparent 20%, transparent 40%, #6FE7DD 40%, #6FE7DD 60%, transparent 60%, transparent 80%, #6FE7DD 80%);
 	content: '';
 }
 
@@ -100,7 +99,7 @@ body,
 	height: 100%;
 	top: 0;
 	left: 50%;
-	background: #bdc3c7;
+	background: #fff;
 }
 
 .close-button::before {
@@ -119,7 +118,7 @@ body,
 	z-index: 1001;
 	width: 300px;
 	height: 100%;
-	background: #373a47;
+	background: #3490DE;
 	padding: 2.5em 1.5em 0;
 	font-size: 1.15em;
 	-webkit-transform: translate3d(-320px,0,0);
