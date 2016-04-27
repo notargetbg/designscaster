@@ -117,13 +117,16 @@
     top: 40px;
     transform: rotate(0deg) translate(0px,0px);
 }
+
 .view:hover .mask-1,
 .view:hover .mask-2 {
 	transition-delay: 0s;
 }
+
 .view:hover .mask-1 {
     transform: rotate(45deg) translateX(1px);
 }
+
 .view:hover .mask-2 {  
     transform: rotate(45deg) translateX(-1px);
 }
