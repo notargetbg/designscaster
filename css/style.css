@@ -7,10 +7,10 @@
     color: white !important;
 }
 
-/* --------------- MEDIA STYLES ------------------ */
-.media-home .media-heading {
-	margin-top: 20px;
-}
+	/* --------------- MEDIA STYLES ------------------ */
+	.media-home .media-heading {
+		margin-top: 20px;
+	}
 
 /* -------- HOVER EFFECTS - sections home page --------- */
 .view {
