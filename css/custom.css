@@ -44,6 +44,7 @@ h1, h2, h3, h4, h5, h6, p, span, a, div, button, input, textarea {
 .navbar-nav>.active>a {
 	background-color: #fefbfc !important;
 	color: #19e0fc !important;
+	border-bottom: 3px solid #19e0fc;
 }
 
 .navbar-fixed-top .navbar-nav li a {
@@ -62,7 +63,7 @@ h1, h2, h3, h4, h5, h6, p, span, a, div, button, input, textarea {
 /* HEADER SECTION */
 .header-bg {
 	background-color: #252726;
-	padding: 280px 0;
+	/*padding: 280px 0;*/
 }
 
 	.header-bg h1 {
@@ -341,7 +342,7 @@ h1, h2, h3, h4, h5, h6, p, span, a, div, button, input, textarea {
 	margin-bottom: 120px;
 }
 
-	.categories>.navbar-nav>li>a {
+	.categories>.navbar-nav>li>button {
 		background-color: #efeaea !important;
 		text-decoration: none;
 		border: 1px solid #efeaea;
@@ -352,7 +353,7 @@ h1, h2, h3, h4, h5, h6, p, span, a, div, button, input, textarea {
 		margin: 15px;
 	}
 
-		.categories>.navbar-nav>li>a:hover, .categories>.navbar-nav>.active>a {
+		.categories>.navbar-nav>li>button:hover, .categories>.navbar-nav>li>button.active {
 			border: 1px solid #00e1ff;
 			color: #3f4244 !important;
 		}
