@@ -34,26 +34,30 @@
 				    </div>
 				    <div class="collapse navbar-collapse navbar-right" id="myNavbar">
 				      <ul class="nav navbar-nav">
-				        <li class="active"><a href="index.html">Home</a></li>
+				        <li class="active"><a href="#home">Home</a></li>
 				        <li><a href="#services">Services</a></li>
-				        <li><a href="#">Portfolio</a></li>
-				        <li><a href="#">About</a></li>
-				        <li><a href="#">Contact</a></li>
+				        <li><a href="#portfolio">Portfolio</a></li>
+				        <li><a href="#about">About</a></li>
+				        <li><a href="#contact">Contact</a></li>
 				      </ul>
 				    </div>
 				</nav>
 			</div>
 		</header>
 
-		<section class="header-bg">
-			<video autoplay loop class="fillWidth">
-	            <source src="video/Love-Coding.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
-	            <source src="video/Love-Coding.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
-        	</video>
-			<div class="container text-center">
-				<h1>WE MAKE WEBSITES</h1>
-				<button type="button">START TOUR</button>
-			</div>
+		<section class="header-bg" id="home">
+			<div class="video-container">
+				<video autoplay loop class="fillWidth">
+		            <source src="video/Love-Coding.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+		            <source src="video/Love-Coding.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+	        	</video>
+	        	<div class="container text-center">
+					<div class="overlay-video">
+						<h1>WE MAKE WEBSITES</h1>
+						<button type="button">START TOUR</button>
+					</div>
+				</div>
+	        </div>
 		</section>
 
 		<section class="services-bg" id="services">
@@ -158,7 +162,7 @@
 			</div>
 		</section>
 
-		<section class="portfolio-bg">
+		<section class="portfolio-bg" id="portfolio">
 			<div class="container">
 				<div class="row text-center">
 					<div class="col-md-offset-2 col-md-8">
@@ -181,7 +185,7 @@
 				</div>
 			</div>
 			<div class="container">
-				<div id="filter-area" class="row">
+				<div id="filter-area" class="row text-center">
 					<div class="col-md-3 mix wordpress-themes">
 						<div class="projects-bg text-center">
 							<div class="hovereffect">
@@ -283,7 +287,7 @@
         	</div>
 		</section>
 
-		<section class="about">
+		<section class="about" id="about">
 			<div class="team-bg text-center">
 				<div class="container">
 					<div class="row">
@@ -416,7 +420,7 @@
 			</div>
 		</section>
 
-		<section class="contact-bg">
+		<section class="contact-bg" id="contact">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-offset-2 col-md-8">
@@ -483,7 +487,7 @@
 			    	}, 800, function(){
 			      			window.location.hash = hash;
 			    			})
-			    		};
+			    };
 			});
 
 			$(function(){

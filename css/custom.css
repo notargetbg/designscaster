@@ -10,6 +10,15 @@ h1, h2, h3, h4, h5, h6, p, span, a, div, button, input, textarea {
 	font-family: 'Raleway', sans-serif;
 }
 
+p {
+	font-size: 13px;
+}
+
+/* MixItUp Css */
+#filter-area .mix {
+	display: none;
+}
+
 /* NAVIGATION */
 .nav-wrap {
 	background-color: #fefbfc;
@@ -66,6 +75,30 @@ h1, h2, h3, h4, h5, h6, p, span, a, div, button, input, textarea {
 	/*padding: 280px 0;*/
 }
 
+	.header-bg .video-container {
+		position: relative;
+	}
+
+	.header-bg video {
+		width: 100%;
+    	z-index: 0;
+    	height: auto;
+  		vertical-align: middle;
+	}
+
+	.overlay-video {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	    z-index: 1;
+	    flex-direction: column;
+	}
+
 	.header-bg h1 {
 		font-size: 60px;
 		font-weight: 200;
@@ -76,11 +109,18 @@ h1, h2, h3, h4, h5, h6, p, span, a, div, button, input, textarea {
 	.header-bg button {
 		font-size: 15px;
 		font-weight: 300;
-		background-color: #252726;
+		background-color: transparent;
 		border: 1px solid #fefbfc;
 		color: #fefbfc;
 		padding: 18px 40px;
 	}
+
+		.header-bg button:hover {
+			font-weight: 500;
+		    background-color: #19e0fc;
+		    border: 1px solid #19e0fc;
+		    color: #252726;
+		}
 
 /* SERVICES SECTION */
 .services-bg {
@@ -108,7 +148,6 @@ h1, h2, h3, h4, h5, h6, p, span, a, div, button, input, textarea {
 	}
 
 .service p {
-	font-size: 13px;
 	font-weight: 300;
 	color: #929ba0;
 }
@@ -166,6 +205,12 @@ h1, h2, h3, h4, h5, h6, p, span, a, div, button, input, textarea {
 	padding: 15px 40px;
 	margin-bottom: 45px;
 }
+
+	.resp button:last-child:hover {
+		/*color: #ffffff;*/
+	    border: 1px solid #252726;
+	    background-color: #252726;
+	}
 
 .down-arrow {
 	position: relative;
@@ -229,7 +274,6 @@ h1, h2, h3, h4, h5, h6, p, span, a, div, button, input, textarea {
 		}
 
 	.browsers-bg p {
-		font-size: 13px;
 		font-weight: 300;
 		color: #ffffff;
 	}
@@ -280,7 +324,6 @@ h1, h2, h3, h4, h5, h6, p, span, a, div, button, input, textarea {
 			}
 
 		.timeline p {
-			font-size: 13px;
 			font-weight: 400;
 			color: #929ba0;
 		}
@@ -332,7 +375,6 @@ h1, h2, h3, h4, h5, h6, p, span, a, div, button, input, textarea {
 		}
 
 	.portfolio-bg p {
-		font-size: 13px;
 		font-weight: 300;
 		color: #444444;
 		margin-bottom: 75px;
@@ -343,6 +385,8 @@ h1, h2, h3, h4, h5, h6, p, span, a, div, button, input, textarea {
 }
 
 	.categories>.navbar-nav>li>button {
+		display: block;
+		width: 100%;
 		background-color: #efeaea !important;
 		text-decoration: none;
 		border: 1px solid #efeaea;
@@ -382,7 +426,6 @@ h1, h2, h3, h4, h5, h6, p, span, a, div, button, input, textarea {
 		}
 
 	.projects-bg p {
-		font-size: 13px;
 		font-weight: 300;
 		color: #929ba0;
 		padding-bottom: 30px;
@@ -518,7 +561,6 @@ h1, h2, h3, h4, h5, h6, p, span, a, div, button, input, textarea {
 	.methods-bg p {
 		position: relative;
 		bottom: -125px;
-		font-size: 13px;
 		font-weight: 300;
 		color: #ffffff;
 	    opacity: 0;
@@ -562,7 +604,6 @@ h1, h2, h3, h4, h5, h6, p, span, a, div, button, input, textarea {
 		}
 
 	.team-bg p {
-		font-size: 13px;
 		font-weight: 300;
 		color: #444444;
 	}
@@ -590,7 +631,6 @@ h1, h2, h3, h4, h5, h6, p, span, a, div, button, input, textarea {
 	}
 
 	.team-member p {
-		font-size: 13px;
 		font-weight: 500;
 		color: #ffffff;
 	}
@@ -688,7 +728,6 @@ h1, h2, h3, h4, h5, h6, p, span, a, div, button, input, textarea {
 	}
 
 	#about-info p {
-		font-size: 13px;
 		font-weight: 300;
 		color: #929ba0;
 	}
@@ -718,7 +757,6 @@ h1, h2, h3, h4, h5, h6, p, span, a, div, button, input, textarea {
 		}
 
 	.what-you-get-bg p {
-		font-size: 13px;
 		font-weight: 300;
 		color: #ffffff;
 	}
@@ -748,7 +786,6 @@ h1, h2, h3, h4, h5, h6, p, span, a, div, button, input, textarea {
 		}
 
 	.clients-bg>div>div>div>p {
-		font-size: 13px;
 		font-weight: 300;
 		color: #929ba0;
 		padding-bottom: 70px;
@@ -766,14 +803,12 @@ h1, h2, h3, h4, h5, h6, p, span, a, div, button, input, textarea {
 	}
 
 	.clients p:first-of-type {
-		font-size: 13px;
 		font-weight: 400;
 		color: #00e1ff;
 		padding-bottom: 15px;
 	}
 
 	.clients p:last-of-type {
-		font-size: 13px;
 		font-weight: 300;
 		color: #929ba0;
 	}
@@ -807,7 +842,6 @@ h1, h2, h3, h4, h5, h6, p, span, a, div, button, input, textarea {
 		}
 
 	.contact-bg p {
-		font-size: 13px;
 		font-weight: 300;
 		color: #ffffff;
 	}
@@ -897,6 +931,12 @@ h1, h2, h3, h4, h5, h6, p, span, a, div, button, input, textarea {
 	color: #ffffff;
 	margin-top: 15px;
 }
+
+	#contact-form button:hover {
+		background-color: #00e1ff;
+		font-weight: 500;
+    	color: #131316;
+	}
 
 /* ADDRESS SECTION */
 .address-bg {
@@ -991,10 +1031,10 @@ h1, h2, h3, h4, h5, h6, p, span, a, div, button, input, textarea {
 
 /* MEDIA QUERIES */
 @media all and (max-width: 1199px) {
-	.categories>.navbar-nav>li>a {
+	.categories>.navbar-nav>li>button {
 		font-size: 11px;
-		padding: 10px;
-		margin: 10px;
+		padding: 15px 10px;
+		margin: 20px 10px;
 		text-align: center;
 	}
 }
@@ -1040,13 +1080,11 @@ h1, h2, h3, h4, h5, h6, p, span, a, div, button, input, textarea {
 		}
 }
 
-@media all and (min-width: 275px) and (max-width: 991px) {
+@media all and (max-width: 991px) {
 	.services-bg {
 		padding: 40px 0 30px 0 !important;
 	}
-}
 
-@media all and (max-width: 991px) {
 	.dev-tour, .down-arrow {
 		margin-bottom: 40px;
 	}
@@ -1084,12 +1122,39 @@ h1, h2, h3, h4, h5, h6, p, span, a, div, button, input, textarea {
 	.projects-bg {
 		margin: 20px auto;
 	}
+
+	.methods-bg {
+		padding: 75px 0
+	}
+	
+		.methods-bg .fa {
+			top: -75px;
+			font-size: 36px;
+		}
+
+		.methods-bg h4 {
+			font-size: 11px;
+		}
+
+		.methods-bg h2 {
+			font-size: 34px;
+			margin: 10px 0;
+		}
+
+		.methods-bg p {
+			bottom: -75px;
+			font-size: 11px;
+		}
 }
 
 @media all and (max-width: 767px) {
 	.navbar-fixed-top .navbar-nav li a {
 		height: 100%;
 	}
+
+		.navbar-nav>.active>a {
+			border-bottom: none;
+		}
 
 		.navbar-fixed-top .navbar-nav li a:hover {
 			border: none;
@@ -1122,7 +1187,7 @@ h1, h2, h3, h4, h5, h6, p, span, a, div, button, input, textarea {
 	}
 
 		.categories>.navbar-nav>li {
-			max-width: 175px;
+			max-width: 165px;
 			margin: auto;
 		}
 
@@ -1197,9 +1262,3 @@ h1, h2, h3, h4, h5, h6, p, span, a, div, button, input, textarea {
 	.navbar-brand {
 		font-size: 22px !important;
 	}
-
-
-/* MixItUp Css */
-#filter-area .mix {
-	display: none;
-}
